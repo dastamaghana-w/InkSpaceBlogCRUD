@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog - InkSpace</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<header class="navbar container">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        InkSpace
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="create-blog.html" class="active">
+            Write
+        </a>
+
+    </nav>
+
+
+    <a href="dashboard.html" class="btn btn-dark small-btn">
+        Cancel
+    </a>
+
+</header>
+
+
+<main class="editor container">
+
+
+    <div class="editor-header">
+
+        <div>
+
+            <span class="hero-badge">
+                ✦ New story
+            </span>
+
+            <h1>
+                Create a story
+            </h1>
+
+            <p>
+                Share something useful, personal or inspiring.
+            </p>
+
+        </div>
+
+
+        <button form="blogForm" class="btn btn-primary">
+            Publish Story ↗
+        </button>
+
+    </div>
+
+
+    <form id="blogForm">
+
+
+        <div class="editor-layout">
+
+
+            <!-- MAIN EDITOR -->
+
+            <section class="editor-main">
+
+                <div class="input-group">
+
+                    <input
+                        id="title"
+                        class="title-input"
+                        placeholder="Your story title..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Short description
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="A one-line summary of your story"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Story
+                    </label>
+
+                    <textarea
+                        placeholder="Start writing your story here..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- SETTINGS -->
+
+            <aside class="editor-side">
+
+                <div class="input-group">
+
+                    <label>
+                        Category
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Technology
+                        </option>
+
+                        <option>
+                            Design
+                        </option>
+
+                        <option>
+                            Career
+                        </option>
+
+                        <option>
+                            Life
+                        </option>
+
+                        <option>
+                            Business
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Tags
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="AI, Web, Career"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Cover image URL
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="https://..."
+                    >
+
+                </div>
+
+
+                <div class="check-option">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    Allow comments
+
+                </div>
+
+
+                <div class="check-option">
+
+                    <input
+                        type="checkbox"
+                        checked
+                    >
+
+                    Notify followers
+
+                </div>
+
+            </aside>
+
+
+        </div>
+
+    </form>
+
+</main>
+
+
+<script src="./script.js"></script>
+<script src="./create-blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InkSpace - Modern Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="navbar container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        InkSpace
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="#featured">Discover</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-blog.html">Write</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn">☾</button>
+        <a href="login.html" class="btn btn-primary small-btn"> Get Started </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+
+      <section class="hero container">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="floating-card floating-one">✦ 12K+ Writers</div>
+
+        <div class="floating-card floating-two">◈ Fresh Ideas</div>
+
+        <div class="floating-card floating-three">⚡ Community</div>
+
+        <div class="hero-content reveal">
+          <span class="hero-badge">
+            ✦ A modern home for thoughtful writing
+          </span>
+
+          <h1>
+            Write ideas that
+            <br />
+            <span>deserve to be read.</span>
+          </h1>
+
+          <p>
+            Publish stories, tutorials and opinions in a beautiful space built
+            for creators. Discover smart ideas from a growing community of
+            writers.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#featured" class="btn btn-dark"> Explore Stories </a>
+
+            <a href="create-blog.html" class="btn btn-primary">
+              Start Writing ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED POSTS -->
+
+      <section class="section container" id="featured">
+        <div class="section-heading">
+          <div>
+            <h2>Featured stories</h2>
+
+            <p>Fresh perspectives from the community.</p>
+          </div>
+
+          <button class="btn btn-dark small-btn">View all →</button>
+        </div>
+
+        <div class="posts-grid" id="postsContainer">
+          <!-- CARD 1 -->
+
+          <article class="blog-card reveal">
+            <div class="blog-image image-one">
+              <span class="image-icon">AI</span>
+            </div>
+
+            <div class="blog-content">
+              <span class="category"> TECHNOLOGY </span>
+
+              <h3>The future of AI is becoming more personal</h3>
+
+              <p>
+                How intelligent tools are changing the way we learn, build and
+                create.
+              </p>
+
+              <div class="blog-meta">
+                <div class="author">
+                  <span class="avatar">A</span>
+                  Alex Morgan
+                </div>
+
+                <span> 6 min read </span>
+              </div>
+            </div>
+          </article>
+
+          <div class="blog-filters">
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search stories..."
+            />
+
+            <select id="categoryFilter">
+              <option value="All">All Categories</option>
+              <option value="Technology">Technology</option>
+              <option value="Programming">Programming</option>
+              <option value="Lifestyle">Lifestyle</option>
+              <option value="Education">Education</option>
+              <option value="General">General</option>
+            </select>
+
+            <button id="filterButton">Search</button>
+          </div>
+
+          <div id="blogContainer" class="blog-grid"></div>
+
+          <!-- CARD 2 -->
+
+          <article class="blog-card reveal">
+            <div class="blog-image image-two">
+              <span class="image-icon">UI</span>
+            </div>
+
+            <div class="blog-content">
+              <span class="category"> DESIGN </span>
+
+              <h3>Designing digital products people love</h3>
+
+              <p>
+                Simple principles for creating interfaces that feel natural and
+                memorable.
+              </p>
+
+              <div class="blog-meta">
+                <div class="author">
+                  <span class="avatar">S</span>
+                  Sara Lee
+                </div>
+
+                <span> 8 min read </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+
+          <article class="blog-card reveal">
+            <div class="blog-image image-three">
+              <span class="image-icon">DEV</span>
+            </div>
+
+            <div class="blog-content">
+              <span class="category"> CAREER </span>
+
+              <h3>Small habits that compound into big growth</h3>
+
+              <p>
+                A practical guide to learning consistently without burning
+                yourself out.
+              </p>
+
+              <div class="blog-meta">
+                <div class="author">
+                  <span class="avatar">D</span>
+                  David Kim
+                </div>
+
+                <span> 5 min read </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+
+      <section class="cta container reveal">
+        <div>
+          <span class="hero-badge"> Ready to share? </span>
+
+          <h2>
+            Your next great story
+            <span>starts here.</span>
+          </h2>
+
+          <p>Join thousands of creators publishing their ideas.</p>
+        </div>
+
+        <a href="create-blog.html" class="btn btn-primary"> Create a Blog ↗ </a>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> InkSpace. Built for curious minds.
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>

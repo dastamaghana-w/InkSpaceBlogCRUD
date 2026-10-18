@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - InkSpace</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<header class="navbar container">
+
+    <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        InkSpace
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="create-blog.html">
+            Write
+        </a>
+
+        <a href="index.html">
+            Explore
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button class="theme-btn" id="themeBtn">
+            ☾
+        </button>
+
+        <a href="index.html" class="btn btn-dark small-btn">
+            Log out
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="dashboard container">
+
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <h1>
+                Your workspace
+            </h1>
+
+            <p>
+                Manage your stories and track your progress.
+            </p>
+
+        </div>
+
+
+        <a href="create-blog.html" class="btn btn-primary">
+            ＋ New Blog
+        </a>
+
+    </div>
+
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card reveal">
+
+            <span>
+                Total Views
+            </span>
+
+            <strong>
+                12.8K
+            </strong>
+
+            <small>
+                ↑ 18% this month
+            </small>
+
+        </div>
+
+
+        <div class="stat-card reveal">
+
+            <span>
+                Published
+            </span>
+
+            <strong>
+                24
+            </strong>
+
+            <small>
+                +3 this month
+            </small>
+
+        </div>
+
+
+        <div class="stat-card reveal">
+
+            <span>
+                Drafts
+            </span>
+
+            <strong>
+                07
+            </strong>
+
+            <small>
+                Keep creating
+            </small>
+
+        </div>
+
+
+        <div class="stat-card reveal">
+
+            <span>
+                Followers
+            </span>
+
+            <strong>
+                1.4K
+            </strong>
+
+            <small>
+                ↑ 9% this month
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+
+        <!-- POSTS -->
+
+        <div class="dashboard-panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h2>
+                        Recent posts
+                    </h2>
+
+                    <p>
+                        Your latest stories
+                    </p>
+                </div>
+
+                <a href="create-blog.html">
+                    + New
+                </a>
+
+            </div>
+
+
+            <div class="post-list">
+
+                <div class="post-row">
+
+                    <div class="post-number">
+                        01
+                    </div>
+
+                    <div class="post-info">
+
+                        <h3>
+                            The future of AI is becoming more personal
+                        </h3>
+
+                        <p>
+                            Published · Aug 28, 2026
+                        </p>
+
+                    </div>
+
+                    <span class="status published">
+                        Published
+                    </span>
+
+                </div>
+
+
+                <div class="post-row">
+
+                    <div class="post-number">
+                        02
+                    </div>
+
+                    <div class="post-info">
+
+                        <h3>
+                            Building better digital experiences
+                        </h3>
+
+                        <p>
+                            Published · Aug 22, 2026
+                        </p>
+
+                    </div>
+
+                    <span class="status published">
+                        Published
+                    </span>
+
+                </div>
+
+
+                <div class="post-row">
+
+                    <div class="post-number">
+                        03
+                    </div>
+
+                    <div class="post-info">
+
+                        <h3>
+                            My developer roadmap for 2027
+                        </h3>
+
+                        <p>
+                            Last edited yesterday
+                        </p>
+
+                    </div>
+
+                    <span class="status draft">
+                        Draft
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <aside class="dashboard-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Quick actions
+                    </h2>
+
+                    <p>
+                        Get things done faster
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="create-blog.html" class="quick-card">
+
+                    <span class="quick-icon">
+                        ✎
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Write a new story
+                        </h3>
+
+                        <p>
+                            Turn your idea into a post.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="index.html#featured" class="quick-card">
+
+                    <span class="quick-icon">
+                        ◈
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Explore community
+                        </h3>
+
+                        <p>
+                            Find something interesting.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</main>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
